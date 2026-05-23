@@ -1,0 +1,12 @@
+tensorflow==2.0.0
+tensorflow-datasets==2.0.0
+numpy==1.17.5
+protobuf==3.20.*
+ipython==7.10
+ipykernel
+matplotlib==3.5.3
+ipywidgets>=7.0
+scipy==1.4.1
+scikit-learn==0.22.2.post1
+yfinance==0.1.54
+multitasking==0.0.9

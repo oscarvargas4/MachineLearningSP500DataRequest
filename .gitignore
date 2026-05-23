@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux trash
+.Trash-0/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/

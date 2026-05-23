@@ -8,5 +8,6 @@ matplotlib==3.5.3
 ipywidgets>=7.0
 scipy==1.4.1
 scikit-learn==0.22.2.post1
-yfinance==0.1.54
+yfinance==0.1.70
 multitasking==0.0.9
+pandas==1.1.5

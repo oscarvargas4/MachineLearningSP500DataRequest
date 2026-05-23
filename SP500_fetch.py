@@ -7,8 +7,10 @@ def _yf_download_with_retry(ticker_or_list, start, end, max_retries=20, **kwargs
     
     for attempt in range(1, max_retries + 1):
         try:
-            df = yf.download(ticker_or_list, start=start, end=end,
-                             progress=False, auto_adjust=True, **kwargs)
+            df = yf.Ticker(ticker_or_list)
+            df = df.history(period="max")
+            # df = yf.download(ticker_or_list, start=start, end=end,
+            #                  progress=False, auto_adjust=True, **kwargs)
             if df is not None and len(df) > 0:
                 return df
             raise ValueError("Empty response from yfinance")
